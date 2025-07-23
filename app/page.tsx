@@ -1,3 +1,4 @@
+import { Header } from "@/components/landing/header";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -18,31 +19,7 @@ export default function LandingPage() {
   return (
     <div className="min-h-screen">
       {/* Header */}
-      <header className="border-b border-gray-100">
-        <div className="max-w-3xl px-4 py-4 flex items-center justify-between">
-          <div className="text-2xl font-bold text-emerald-500">Biccas</div>
-          <nav className="hidden md:flex items-center space-x-8">
-            <a href="#" className="text-gray-900 font-medium">
-              Home
-            </a>
-            <a href="#" className="text-gray-600 hover:text-gray-900">
-              Product
-            </a>
-            <a href="#" className="text-gray-600 hover:text-gray-900">
-              FAQ
-            </a>
-            <a href="#" className="text-gray-600 hover:text-gray-900">
-              Blog
-            </a>
-            <a href="#" className="text-gray-600 hover:text-gray-900">
-              About Us
-            </a>
-          </nav>
-          <Button className="bg-emerald-500 hover:bg-emerald-600 text-white px-6">
-            Get Started
-          </Button>
-        </div>
-      </header>
+      <Header />
 
       {/* Hero Section */}
       <section className="max-w-6xl mx-auto from-emerald-50 to-blue-50 py-20">
