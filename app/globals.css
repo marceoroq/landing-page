@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
   background-color: white; /* Fondo base blanco */
   background-image: radial-gradient(
       circle at 100% 50%,
