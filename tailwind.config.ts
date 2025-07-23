@@ -10,6 +10,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      maxWidth: {
+        "7xl": "76rem", // El valor original es '72rem'
+      },
       colors: {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",

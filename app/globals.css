@@ -3,16 +3,17 @@
 @tailwind utilities;
 
 body {
-  background-color: white; /* Fondo base blanco */
+  background-color: white;
   background-image: radial-gradient(
       circle at 100% 50%,
       #52bda954,
       transparent 30%
     ),
-    radial-gradient(circle at 0% 0%, #52bda954, transparent 30%);
+    radial-gradient(circle at 0% 0%, #52bda938, transparent 20%),
+    radial-gradient(circle at 50% 0%, #ffd6d675, transparent 20%);
   background-repeat: no-repeat;
-  background-size: cover; /* Asegura que cubra todo el fondo */
-  min-height: 100vh; /* Para que el fondo ocupe toda la altura de la pantalla */
+  background-size: cover;
+  min-height: 100vh;
 }
 
 @layer utilities {
@@ -29,8 +30,8 @@ body {
     --card-foreground: 0 0% 3.9%;
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 3.9%;
-    --primary: 0 0% 9%;
-    --primary-foreground: 0 0% 98%;
+    --primary: 157 44% 54%;
+    --primary-foreground: 0 0 95%;
     --secondary: 0 0% 96.1%;
     --secondary-foreground: 0 0% 9%;
     --muted: 0 0% 96.1%;

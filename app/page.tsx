@@ -22,7 +22,7 @@ export default function LandingPage() {
       <Header />
 
       {/* Hero Section */}
-      <section className="max-w-6xl mx-auto from-emerald-50 to-blue-50 py-20">
+      <section className="max-w-7xl mx-auto from-emerald-50 to-blue-50 py-20">
         <div className="mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
