@@ -5,7 +5,7 @@
 body {
   background-color: white;
   background-image: radial-gradient(
-      circle at 100% 50%,
+      circle at 100% 10%,
       #52bda954,
       transparent 30%
     ),

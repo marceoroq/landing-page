@@ -11,7 +11,9 @@ const config: Config = {
   theme: {
     extend: {
       maxWidth: {
-        "7xl": "76rem", // El valor original es '72rem'
+        "4xl": "40rem", // The original value is  '36rem'
+        "5xl": "50rem", // The original value is  '48rem'
+        "7xl": "76rem", // The original value is '72rem'
       },
       colors: {
         background: "hsl(var(--background))",

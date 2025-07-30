@@ -16,29 +16,14 @@ import {
   MessageSquare,
   ArrowRight,
 } from "lucide-react";
+import { SocialProof } from "@/components/landing/social-proof";
 
 export default function LandingPage() {
   return (
     <div className="min-h-screen">
       <Header />
       <Hero />
-
-      {/* Social Proof */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-2xl font-semibold text-gray-900 mb-12">
-            More than 25,000 teams use Collabs
-          </h2>
-          <div className="flex flex-wrap justify-center items-center gap-8 opacity-60">
-            <div className="text-xl font-semibold">Dropbox</div>
-            <div className="text-xl font-semibold">Notion</div>
-            <div className="text-xl font-semibold">INTERCOM</div>
-            <div className="text-xl font-semibold">descript</div>
-            <div className="text-xl font-semibold">grammarly</div>
-          </div>
-        </div>
-      </section>
-
+      <SocialProof />
       {/* Support Section */}
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
