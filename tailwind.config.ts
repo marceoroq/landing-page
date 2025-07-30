@@ -11,9 +11,11 @@ const config: Config = {
   theme: {
     extend: {
       maxWidth: {
-        "4xl": "40rem", // The original value is  '36rem'
-        "5xl": "50rem", // The original value is  '48rem'
-        "7xl": "76rem", // The original value is '72rem'
+        "7xl": "76rem", // The original value is '72px'
+      },
+      fontSize: {
+        "4xl": "2.5rem", // The original value is  '36px'
+        "5xl": "3.125rem", // The original value is  '48px'
       },
       colors: {
         background: "hsl(var(--background))",

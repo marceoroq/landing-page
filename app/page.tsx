@@ -5,18 +5,9 @@ import { Header } from "@/components/landing/header";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Hero } from "@/components/landing/hero";
-import {
-  Star,
-  Play,
-  Check,
-  Users,
-  Cloud,
-  BarChart3,
-  FileText,
-  MessageSquare,
-  ArrowRight,
-} from "lucide-react";
+import { Check, Users, Cloud, BarChart3, ArrowRight } from "lucide-react";
 import { SocialProof } from "@/components/landing/social-proof";
+import { SupportSection } from "@/components/landing/support";
 
 export default function LandingPage() {
   return (
@@ -24,98 +15,7 @@ export default function LandingPage() {
       <Header />
       <Hero />
       <SocialProof />
-      {/* Support Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-16">
-            <div>
-              <h2 className="text-4xl font-bold text-gray-900 mb-8">
-                How we support our
-                <br />
-                pratner all over the
-                <br />
-                world
-              </h2>
-              <p className="text-gray-600 mb-8">
-                SaaS become a common delivery model for many business
-                application, including office software, messaging software,
-                payroll processing software, DBMS software, management software
-              </p>
-
-              <div className="space-y-6 mb-8">
-                <div className="flex items-start gap-4">
-                  <div className="flex">
-                    {[1, 2, 3, 4, 5].map((star) => (
-                      <Star
-                        key={star}
-                        className="w-4 h-4 fill-yellow-400 text-yellow-400"
-                      />
-                    ))}
-                  </div>
-                  <div>
-                    <div className="font-semibold">4.9 / 5 rating</div>
-                    <div className="text-sm text-gray-600">databricks</div>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="flex">
-                    {[1, 2, 3, 4, 5].map((star) => (
-                      <Star
-                        key={star}
-                        className="w-4 h-4 fill-yellow-400 text-yellow-400"
-                      />
-                    ))}
-                  </div>
-                  <div>
-                    <div className="font-semibold">4.8 / 5 rating</div>
-                    <div className="text-sm text-gray-600">Chainalysis</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="space-y-6">
-              <div className="flex items-start gap-4">
-                <FileText className="w-6 h-6 text-emerald-500 mt-1" />
-                <div>
-                  <h3 className="font-semibold text-gray-900 mb-2">
-                    Publishing
-                  </h3>
-                  <p className="text-gray-600 text-sm">
-                    Plan, collaborate, and publishing your contetn that drivees
-                    meaningful engagement and growth for your barnd
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4">
-                <BarChart3 className="w-6 h-6 text-emerald-500 mt-1" />
-                <div>
-                  <h3 className="font-semibold text-gray-900 mb-2">
-                    Analytics
-                  </h3>
-                  <p className="text-gray-600 text-sm">
-                    Analyze your performance and create goegeous report
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4">
-                <MessageSquare className="w-6 h-6 text-emerald-500 mt-1" />
-                <div>
-                  <h3 className="font-semibold text-gray-900 mb-2">
-                    Engagement
-                  </h3>
-                  <p className="text-gray-600 text-sm">
-                    Quickly navigate you anda engage with your audience
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <SupportSection />
 
       {/* Features Section */}
       <section className="py-20 bg-white">
