@@ -1,12 +1,5 @@
 import Image from "next/image";
-import {
-  Check,
-  Database,
-  MessageSquareIcon,
-  PlayCircleIcon,
-} from "lucide-react";
-import { AiOutlinePlayCircle } from "react-icons/ai";
-import { HiOutlinePlayCircle } from "react-icons/hi2";
+import { Check, Database, MessageSquareIcon } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 
