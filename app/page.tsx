@@ -8,6 +8,7 @@ import { Hero } from "@/components/landing/hero";
 import { Check, Users, Cloud, BarChart3, ArrowRight } from "lucide-react";
 import { SocialProof } from "@/components/landing/social-proof";
 import { SupportSection } from "@/components/landing/support";
+import { FeatureSection } from "@/components/landing/features";
 
 export default function LandingPage() {
   return (
@@ -16,73 +17,7 @@ export default function LandingPage() {
       <Hero />
       <SocialProof />
       <SupportSection />
-
-      {/* Features Section */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="flex justify-between items-end mb-16">
-            <div>
-              <h2 className="text-4xl font-bold text-gray-900 mb-4">
-                Our Features
-                <br />
-                you cab get
-              </h2>
-              <p className="text-gray-600 max-w-md">
-                We offer a variety of interesting features that you can help
-                increase yor productivity at work and manage your projrct esaly
-              </p>
-            </div>
-            <Button className="bg-emerald-500 hover:bg-emerald-600 text-white">
-              Get Started
-            </Button>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            <Card className="p-8 border-0 shadow-lg">
-              <CardContent className="p-0">
-                <div className="bg-emerald-100 rounded-lg p-6 mb-6">
-                  <Users className="w-8 h-8 text-emerald-600" />
-                </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                  Collaboration Teams
-                </h3>
-                <p className="text-gray-600 text-sm">
-                  Here you can handle projects together with team virtually
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="p-8 border-0 shadow-lg">
-              <CardContent className="p-0">
-                <div className="bg-blue-100 rounded-lg p-6 mb-6">
-                  <Cloud className="w-8 h-8 text-blue-600" />
-                </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                  Cloud Storage
-                </h3>
-                <p className="text-gray-600 text-sm">
-                  No nedd to worry about storage because we provide storage up
-                  to 2 TB
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="p-8 border-0 shadow-lg">
-              <CardContent className="p-0">
-                <div className="bg-yellow-100 rounded-lg p-6 mb-6">
-                  <BarChart3 className="w-8 h-8 text-yellow-600" />
-                </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                  Daily Analytics
-                </h3>
-                <p className="text-gray-600 text-sm">
-                  Analyze all the data you need in one dashboard
-                </p>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
+      <FeatureSection />
 
       {/* Benefits Section */}
       <section className="py-20 bg-gray-50">
