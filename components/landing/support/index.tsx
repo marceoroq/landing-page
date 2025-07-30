@@ -23,8 +23,8 @@ const features = [
 
 export const SupportSection = () => {
   return (
-    <section className="py-[60px] bg-[#F9F8FE]">
-      <div className="max-w-7xl mx-auto">
+    <section className="bg-[#F9F8FE]">
+      <section className="max-w-7xl mx-auto py-[60px] bg-[#F9F8FE] px-4">
         <div className="grid lg:grid-cols-9 gap-7">
           <div className="flex flex-col justify-between lg:col-span-5">
             <div className="flex flex-col gap-7">
@@ -91,7 +91,7 @@ export const SupportSection = () => {
             ))}
           </div>
         </div>
-      </div>
+      </section>
     </section>
   );
 };

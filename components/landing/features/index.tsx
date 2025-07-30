@@ -24,7 +24,7 @@ const features = [
 
 export const FeatureSection = () => {
   return (
-    <section className="max-w-7xl mx-auto pt-32">
+    <section className="max-w-7xl mx-auto px-4 pt-32">
       <div className="container mx-auto">
         <div className="flex items-center justify-between mb-[74px]">
           <h2 className="text-5xl font-semibold leading-[58px] text-gray-900">
