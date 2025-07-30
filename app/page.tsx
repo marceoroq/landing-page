@@ -1,7 +1,10 @@
+import Image from "next/image";
+
+import { Card, CardContent } from "@/components/ui/card";
 import { Header } from "@/components/landing/header";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
+import { Hero } from "@/components/landing/hero";
 import {
   Star,
   Play,
@@ -13,66 +16,12 @@ import {
   MessageSquare,
   ArrowRight,
 } from "lucide-react";
-import Image from "next/image";
 
 export default function LandingPage() {
   return (
     <div className="min-h-screen">
-      {/* Header */}
       <Header />
-
-      {/* Hero Section */}
-      <section className="max-w-7xl mx-auto from-emerald-50 to-blue-50 py-20">
-        <div className="mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
-                We're here to
-                <br />
-                Increase your
-                <br />
-                Productivity
-              </h1>
-              <p className="text-gray-600 text-lg mb-8 max-w-md">
-                Let's make your work more organize and easily using the Taskio
-                Dashboard with many of the latest features in managing work
-                every day.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Button className="bg-emerald-500 hover:bg-emerald-600 text-white px-8 py-3">
-                  Try for free
-                </Button>
-                <Button
-                  variant="outline"
-                  className="flex items-center gap-2 px-8 py-3 bg-transparent"
-                >
-                  <Play className="w-4 h-4" />
-                  View Demo
-                </Button>
-              </div>
-            </div>
-            <div className="relative">
-              <div className="bg-emerald-400 rounded-2xl p-8 relative overflow-hidden">
-                <div className="absolute top-4 right-4 bg-yellow-400 rounded-full w-12 h-12"></div>
-                <div className="absolute bottom-4 left-4 bg-purple-500 rounded-lg w-8 h-8"></div>
-                <Image
-                  src="/placeholder.svg?height=400&width=300"
-                  alt="Person with analytics"
-                  width={300}
-                  height={400}
-                  className="mx-auto"
-                />
-                <div className="absolute top-8 left-8 bg-white rounded-lg p-3 shadow-lg">
-                  <div className="text-sm font-semibold">$432.00</div>
-                </div>
-                <div className="absolute bottom-8 right-8 bg-white rounded-lg p-3 shadow-lg">
-                  <div className="text-sm font-semibold">$24.00</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Hero />
 
       {/* Social Proof */}
       <section className="py-16 bg-white">
