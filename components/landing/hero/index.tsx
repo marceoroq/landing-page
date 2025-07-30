@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 
 export const Hero = () => {
   return (
-    <section className="max-w-7xl mx-auto from-emerald-50 to-blue-50 py-24">
+    <section className="max-w-7xl mx-auto from-emerald-50 to-blue-50 pt-24">
       <div className="mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="flex flex-col gap-12">
@@ -37,7 +37,7 @@ export const Hero = () => {
               </Button>
             </div>
           </div>
-          <div className="relative -top-10 w-fit justify-self-end">
+          <div className="relative self-start w-fit justify-self-end">
             <div className="w-[410px] h-[526px] rounded-2xl relative">
               <Image width={410} height={526} alt="" src="/hero-image.svg" />
               <div className="bg-amber-300 h-12 w-12 rounded-lg z-10 flex items-center justify-center absolute top-8 -right-8 rotate-12">
