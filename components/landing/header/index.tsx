@@ -8,7 +8,7 @@ export const Header = () => {
           Biccas
         </div>
         <nav className="hidden md:flex items-center gap-10">
-          <a href="#" className="text-gray-900 font-medium">
+          <a href="#" className="text-gray-900 scale-110 font-medium">
             Home
           </a>
           <a href="#" className="text-neutral-400 hover:text-gray-900">
