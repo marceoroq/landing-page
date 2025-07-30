@@ -5,10 +5,11 @@ import { Header } from "@/components/landing/header";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Hero } from "@/components/landing/hero";
-import { Check, Users, Cloud, BarChart3, ArrowRight } from "lucide-react";
+import { Check, ArrowRight } from "lucide-react";
 import { SocialProof } from "@/components/landing/social-proof";
 import { SupportSection } from "@/components/landing/support";
 import { FeatureSection } from "@/components/landing/features";
+import { BenefitsSection } from "@/components/landing/benefit";
 
 export default function LandingPage() {
   return (
@@ -18,63 +19,7 @@ export default function LandingPage() {
       <SocialProof />
       <SupportSection />
       <FeatureSection />
-
-      {/* Benefits Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div>
-              <h2 className="text-4xl font-bold text-gray-900 mb-8">
-                What Benefit Will
-                <br />
-                You Get
-              </h2>
-
-              <div className="space-y-4">
-                <div className="flex items-center gap-3">
-                  <Check className="w-5 h-5 text-emerald-500" />
-                  <span className="text-gray-700">
-                    Free Consulting With Experet Saving Money
-                  </span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <Check className="w-5 h-5 text-emerald-500" />
-                  <span className="text-gray-700">Online Banking</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <Check className="w-5 h-5 text-emerald-500" />
-                  <span className="text-gray-700">
-                    Investment Report Every Month
-                  </span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <Check className="w-5 h-5 text-emerald-500" />
-                  <span className="text-gray-700">
-                    Saving Money For The Future
-                  </span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <Check className="w-5 h-5 text-emerald-500" />
-                  <span className="text-gray-700">Online Transaction</span>
-                </div>
-              </div>
-            </div>
-
-            <div className="relative">
-              <Image
-                src="/placeholder.svg?height=400&width=500"
-                alt="Laptop with dashboard"
-                width={500}
-                height={400}
-                className="rounded-lg"
-              />
-              <div className="absolute bottom-4 left-4 bg-white rounded-lg p-3 shadow-lg">
-                <div className="text-sm">Money Transfer Successful</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <BenefitsSection />
 
       {/* Pricing Section */}
       <section className="py-20 bg-white">
